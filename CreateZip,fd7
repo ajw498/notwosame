@@ -1,0 +1,3 @@
+Dir <Obey$Dir>
+remove notwosame/zip
+zip -r -9 notwosame/zip NoTwoSame NoTwoSameS ReadMe Licence ChangeLog

@@ -1,8 +1,34 @@
-                            NoTwoSame  ©Alex Waugh 1998
-                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        NoTwoSame
+                        ~~~~~~~~~
 
-This program is freeware, which means you can download and use it, and also pass it onto other people free of charge, but I retain the copyright.  You may also modify the program for your own use, but you cannot pass on modified copies without my prior permission.
+Copyright Alex Waugh 1998,2002
 
-It has been tested on RISC OS 3.71, but does not come with any kind of warranty, i.e. it is supplied "as is" and I am not responsible if it does not work correctly. However I will try to correct any bugs that are found.
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
 
-Any comments, bug reports or suggestions for improvements are welcome. You can e-mail me, Alex Waugh, at ajw498@ecs.soton.ac.uk
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+
+Ever come across someone complaining about running out of memory, only
+to find that they have 10 copies of the same program loaded? This module
+prevents that from happening. Simply put it into your
+!Boot.Choices.Boot.Tasks directory.
+
+The modules takes about 1.5k of memory
+
+The program works by comparing filenames, so if you have two copies of
+the same application with different filenames, it would allow both to
+load once. It also only compares the first 10 characters of the
+filename, but I do not see this being a problem unless you have two
+applications with names that are the same for the first ten characters
+then differ in the remainder. If this is a problem then you can alter
+the MaxNameLen% (it might only work if this is an even number) variable
+in the NoTwoSameS basic program then run it to create a new module.
+
+
+http://www.alexwaugh.com/
