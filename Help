@@ -1,0 +1,14 @@
+                       Help file for NoTwoSame
+                       ~~~~~~~~~~~~~~~~~~~~~~~
+Ever come across someone complaining about running out of memory, only to find that they have 10 copies of the same program loaded? This module prevents that from happening.
+Simply put it into your !Boot.Choices.Boot.Tasks directory.
+
+The modules takes about 1.5k of memory
+
+The program works by comparing filenames, so if you have two copies of the same application with different filenames, it would allow both to load once. It also only compares the first 10 characters of the filename, but I do not see this being a problem unless you have two applications with names that are the same for the first ten characters then differ in the remainder. If this is a problem then you can alter the MaxNameLen% (it might only work if this is an even number) variable in the NoTwoSameS basic program then run it to create a new module.
+
+
+NoTwoSame is © Alex Waugh, 1999
+
+http://www.ecs.soton.ac.uk/~ajw498/
+mailto:ajw498@ecs.soton.ac.uk
